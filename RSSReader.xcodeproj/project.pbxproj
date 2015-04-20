@@ -41,7 +41,8 @@
 		AAC02B35193DF2B8003997F3 /* RSSReader-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSSReader-Bridging-Header.h"; sourceTree = "<group>"; };
 		AAC02B39193DF344003997F3 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AFE16BB7AB9C49C5B4EFAE90 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E885CC41F32F4E3AA56367A0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D860B15DFFEF984B7F2F3FA5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E239F18E17BD3729300648F1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		571E65F4FFD580AB8A1E6E94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D860B15DFFEF984B7F2F3FA5 /* Pods.debug.xcconfig */,
+				E239F18E17BD3729300648F1 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		70FA9D20B8584551BECCAF8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,8 +88,8 @@
 				AAC02B15193DEEFE003997F3 /* RSSReader */,
 				AAC02B28193DEEFE003997F3 /* RSSReaderTests */,
 				AAC02B14193DEEFE003997F3 /* Products */,
-				E885CC41F32F4E3AA56367A0 /* Pods.xcconfig */,
 				70FA9D20B8584551BECCAF8B /* Frameworks */,
+				571E65F4FFD580AB8A1E6E94 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -257,7 +267,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -383,7 +393,7 @@
 		};
 		AAC02B30193DEEFE003997F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E885CC41F32F4E3AA56367A0 /* Pods.xcconfig */;
+			baseConfigurationReference = D860B15DFFEF984B7F2F3FA5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -398,7 +408,7 @@
 		};
 		AAC02B31193DEEFE003997F3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E885CC41F32F4E3AA56367A0 /* Pods.xcconfig */;
+			baseConfigurationReference = E239F18E17BD3729300648F1 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

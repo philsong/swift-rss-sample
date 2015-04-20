@@ -28,7 +28,7 @@ class ViewController: UITableViewController, MWFeedParserDelegate {
     }
     
     func request() {
-        let URL = NSURL(string: "https://www.wantedly.com/projects.xml")
+        let URL = NSURL(string: "http://www.8btc.com/feed")
         let feedParser = MWFeedParser(feedURL: URL);
         feedParser.delegate = self
         feedParser.parse()
@@ -56,7 +56,7 @@ class ViewController: UITableViewController, MWFeedParserDelegate {
     }
 
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 100
+        return 45
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
