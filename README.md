@@ -37,8 +37,11 @@ An RSS reader app written in [Swift](https://developer.apple.com/swift/). About 
 
 
 
-change in 2015.4.20
+###Change in 2015.4.20 just for demo by btcrobot
+
+
 1. upgrade code to work in new swift version
+
 2. update to 8btc RSS.
 
 ### Installation
